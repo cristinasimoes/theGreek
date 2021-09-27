@@ -1,0 +1,272 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+/* BODY STYLES */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #ffaf38f0;
+}
+.second-menu li:hover{
+    background-color: white;
+    border: 1px solid  #ffaf38f0;
+}
+.second-menu li:hover a{
+    color: #ffaf38f0;
+}
+.icons svg{
+    padding-right: 10px;
+}
+/* NAV BAR */
+.logo{
+    font-family: 'Shadows Into Light', cursive;
+    color: #ffaf38f0;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 800;
+}
+.orange{
+    color: #ffaf38f0;
+}
+ul{
+    padding: 0;
+    margin: auto;
+    width: 208px;
+}
+li{
+    list-style: none;
+    padding: 5px 10px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 0%), 0 10px 10px rgb(0 0 0 / 8%);
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-burger{
+    padding: 10px;
+}
+.menu-nav{
+    display: flex;
+}
+
+
+/* restaurant MENU */
+.restaurant-nav{
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+nav .restaurant-nav{
+    display: none;
+}
+.restaurant-nav-menu{
+    display: flex;
+}
+.second-menu{
+    display: flex;
+    flex-direction: column;
+}
+.second-menu li{
+    background: #ffaf38f0;
+    margin: 10px;
+}
+.second-menu-first {
+    background: white!important;
+    border: 1px solid  #ffaf38f0;
+}
+.second-menu-first a{
+    color: #ffaf38f0!important;
+}
+.second-menu a{
+    color: white;
+}
+.restaurant-nav-menu ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title{
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+}
+.info:nth-child(2){
+    font-size: 12px;
+}
+
+h3{
+    font-size: 32px;
+    letter-spacing: 3px;  
+    text-align: center;
+    font-family: 'Tangerine', cursive; 
+}
+
+/* restaurant SECTION */
+.text{
+    font-size: 12px;
+}
+.restaurant-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 9px 0 60px 0;
+}
+.titles-section{
+    padding: 0px 15px;
+
+}
+.first-row, .second-row{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.restaurant-section .card{
+    width: 76vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 10px;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.info{
+    text-align: left;
+}
+
+.price{
+    color: #ffc107;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+footer{
+    padding: 10px 20px;
+    bottom: 0;
+    background-color: #ededed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.title{
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.title:hover{
+    text-decoration: none;
+    cursor: inherit;
+}
+.contact{
+    margin: auto;
+    text-align: center;
+}
+h3{
+    margin-bottom: 0;
+
+}
+.second-menu li{
+    text-align: center;
+
+}
+
+@media only screen and (min-width: 768px) {
+    nav .restaurant-nav{
+        display: flex;
+    }
+    h3{
+        margin-bottom: inherit;
+
+    }
+
+    ul{
+  
+        width: inherit;
+    
+    }
+    .restaurant-nav{
+        display: flex;
+        justify-content: center;
+
+    }
+    .icon-burger{
+        display: none;
+    }
+    hr{
+        display: block;
+
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo{
+        margin: 0;
+    }
+    .menu-nav{
+        margin: 0;
+        align-items: center;
+    }
+    .restaurant-nav-menu ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .bg-image{
+        height: 300px;
+    }
+    .header-section .card{
+        top: 249px;
+    }
+    .restaurant-section {
+        flex-direction: row;
+    }
+    .first-row, .second-row {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .restaurant-section .card {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .restaurant-nav {
+        flex-direction: row;
+        padding: 10px 20px;
+    }
+    .restaurant-section {
+        flex-direction: row;
+    }
+}
