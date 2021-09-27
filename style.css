@@ -257,7 +257,7 @@ h3{
         justify-content: center;
     }
     .restaurant-section .card {
-        width: 300px;
+        width: 40vw;
     }
 }
 
@@ -269,4 +269,8 @@ h3{
     .restaurant-section {
         flex-direction: row;
     }
+    .restaurant-section .card {
+        width: 400px;
+    }
+
 }
