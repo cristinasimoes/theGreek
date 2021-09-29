@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 /* BODY STYLES */
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -9,7 +14,11 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: white;
     font-size: 14px;
+    height: 100%;
+    overflow: auto;
 }
+
+
 
 a{
     text-decoration: none;
